@@ -39,15 +39,19 @@ function preload()
 
 function setup() {
 
-	createCanvas(displayWidth-30, displayHeight-30);
+	createCanvas(displayWidth, displayHeight-20);
 
+
+	
+	console.log("Display params"+ displayWidth + "x"+displayHeight);
+	console.log("Canvas params"+ width/2 + "x"+ height/2);
 
 
 	//engine = Engine.create();
 	//world = engine.world;
 
 	//Create the Bodies Here.
-	logo = createSprite(250, height/2);
+	logo = createSprite(250, height/2, width/6,height/8);
 	logo.addImage("logo" ,logoImage);
 	logo.scale = 0.5;
 
@@ -92,6 +96,7 @@ function setup() {
 function draw() {
   
   background(250, 250, 250);
+
   
 //   if(keyDown("space")){
 //     logo.visible = false;
