@@ -12,7 +12,7 @@ display(){
 
 
     this.logoImage.position(50,100);
-    this.logoImage.size(width/2-100,height-150);
+    this.logoImage.size(width/2-100,height-200);
 
     
     this.contactUs.position(width/2+200,height/2);
