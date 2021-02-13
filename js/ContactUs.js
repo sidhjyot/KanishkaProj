@@ -17,17 +17,27 @@ class ContactUs {
         this.image3.position(50,height/2);
 
 
-        this.backButton.position(100,200);
+        this.backButton.position(80,150);
         this.backButton.size(200,50)
         this.backButton.style("font-size","30px");
         this.backButton.style("background-color","#023919")
         this.backButton.style("color","#ffffff");
 
         this.backButton.mousePressed(()=>{
-            this.backButton.hide();
-            homescreen.showMainScreenOptions();
+            this.hideContactElements();
+            homescreen.showMainScreenElements();
     });        
 
        
     }
+
+    hideContactElements(){
+        this.title.hide();
+        this.image1.hide();
+        this.image2.hide();
+        this.image3.hide();
+        this.backButton.hide();
+        
+    }
+
 }

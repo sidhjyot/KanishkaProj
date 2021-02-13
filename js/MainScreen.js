@@ -12,7 +12,7 @@ display(){
 
 
     this.logoImage.position(50,100);
-    this.logoImage.size(width/2,height-150);
+    this.logoImage.size(width/2-100,height-150);
 
     
     this.contactUs.position(width/2+200,height/2);
@@ -38,17 +38,20 @@ display(){
     });
 
     this.gallery.mousePressed(()=>{
-        this.title.hide();
-        this.logoImage.hide();
-        this.contactUs.hide();
-        this.gallery.hide();
+        this.hideMainScreenElements();
 
         galleryScreen=new Gallery();
         galleryScreen.display();
     });
  }
 
- showMainScreenOptions(){
+ hideMainScreenElements(){
+    this.title.hide();
+    this.logoImage.hide();
+    this.contactUs.hide();
+    this.gallery.hide();
+ }
+ showMainScreenElements(){
     this.title.show();
     this.logoImage.show();
     this.contactUs.show();
